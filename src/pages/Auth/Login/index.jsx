@@ -143,6 +143,7 @@ export default function Login() {
                   value={formik.values.password}
                   onChange={formik.handleChange}
                   name="password"
+                  id="password"
                 />
               </Stack>
               <HStack justify="end">

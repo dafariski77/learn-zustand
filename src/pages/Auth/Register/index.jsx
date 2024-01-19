@@ -153,11 +153,13 @@ export default function Register() {
                   value={formik.values.password}
                   onChange={formik.handleChange}
                   name="password"
+                  id="password"
                 />
                 <PasswordField
                   value={formik.values.passwordConfirmation}
                   onChange={formik.handleChange}
                   name="passwordConfirmation"
+                  id="passwordConfirmation"
                 />
               </Stack>
               <Stack spacing="6">
