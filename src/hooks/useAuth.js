@@ -17,3 +17,11 @@ export const useRegisterMutation = () => {
     },
   });
 };
+
+export const useVerifyMutation = () => {
+  return useMutation({
+    mutationFn: (data) => {
+      return axios.post(`${configs.serverUrl}/api/v1/auth/verify`, data);
+    },
+  });
+};
